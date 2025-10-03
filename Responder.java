@@ -33,8 +33,7 @@ public class Responder
     public String generateResponse(HashSet<String> words)
     {
         for (String word: words){
-        if (responses.containsKey(word)) 
-        
+        if (responses.containsKey(word
         int index = randomGenerator.nextInt(responses.size());
         return responses.get(index);
     }

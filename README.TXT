@@ -38,7 +38,7 @@ Then start describing your problem by typing in the terminal window.
 
 Had problme with SupportSystem Class so will put 37 here
 37. For it to work
-
+    In SupportSystem
     import java.util.HashSet;
     
     Hash<String> inputWords = reader.getInput();
@@ -46,5 +46,8 @@ Had problme with SupportSystem Class so will put 37 here
     if (inputWords.contains("bye")) {
         finished = true;
     }
-    
+    in Responder
     String response = responder.generateResponse(inputWords);
+    
+
+    

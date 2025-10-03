@@ -24,4 +24,9 @@ Then start describing your problem by typing in the terminal window.
     Some important methods are put (K Key, V Value) and get (object key).
     Yes, I do think it could be used for both parameters
 26. The method size() will return the amount of entries
-
+28. If you add "A" , "1" and "A" , "2" then 2 will overwrite the 1
+29. As long as both entries have diffirent names and different keys they won't collide in any way shape or form.
+30. You use the containKey() method of the Map interface.
+31. it would return as null
+32. You can ues the KeySet() method.
+33

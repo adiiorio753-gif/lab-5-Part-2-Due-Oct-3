@@ -29,4 +29,9 @@ Then start describing your problem by typing in the terminal window.
 30. You use the containKey() method of the Map interface.
 31. it would return as null
 32. You can ues the KeySet() method.
-33
+34. both store collections of objects.
+    HashSet: No duplicates, no order.
+    ArrayList: Allows duplicates, keeps order
+35. HashSet: Words are unique,oreder is not keep
+    ArrayList: Words can repeat, oreder is kept
+36. if you split by just a single space, you may get empty strings.

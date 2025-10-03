@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.HashSet;
 /**
  * InputReader reads typed text input from the standard text terminal. 
  * The text typed by a user is then chopped into words, and a set of words 
@@ -29,9 +29,17 @@ public class InputReader
     public String getInput()
     {
         // print prompt
-        System.out.print("> ");         
-        String inputLine = reader.nextLine();
+        System.out.print("> ");                
+        String inputLine = reader.nextLine().trim().toLowerCase();
+        
+        // Use a Scanner to split at spaces
+        Scanner splitter = new Scanner(inputLine);
 
-        return inputLine;
+        // Add each word into the HashSet
+        HashSet<String> words = new HashSet<>();
+        while(splitter.hasNext()) {
+            words.add(splitter.next());
+        }
+        return words;
     }
 }

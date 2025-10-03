@@ -30,11 +30,11 @@ public class Responder
      * 
      * @return  A string that should be displayed as the response
      */
-    public String generateResponse()
+    public String generateResponse(HashSet<String> words)
     {
-        // Pick a random number for the index in the default response 
-        // list. The number will be between 0 (inclusive) and the size
-        // of the list (exclusive).
+        for (String word: words){
+        if (responses.containsKey(word)) 
+        
         int index = randomGenerator.nextInt(responses.size());
         return responses.get(index);
     }

@@ -39,14 +39,15 @@ public class SupportSystem
         printWelcome();
 
         while(!finished) {
-            HashSet<String> input = reader.getInput();
+            HashSet<String> inputWords = reader.getInput();
 
-            if(input.contains("bye")) {
+            if(inputWords.contains("bye")) {
                 finished = true;
             }
-            else {
-                String response = responder.generateResponse(input);
+            else { 
+                String response = responder.generateResponse(inputWords);
                 System.out.println(response);
+                
             }
         }
         printGoodbye();

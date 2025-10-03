@@ -35,3 +35,16 @@ Then start describing your problem by typing in the terminal window.
 35. HashSet: Words are unique,oreder is not keep
     ArrayList: Words can repeat, oreder is kept
 36. if you split by just a single space, you may get empty strings.
+
+Had problme with SupportSystem Class so will put 37 here
+37. For it to work
+
+    import java.util.HashSet;
+    
+    Hash<String> inputWords = reader.getInput();
+    
+    if (inputWords.contains("bye")) {
+        finished = true;
+    }
+    
+    String response = responder.generateResponse(inputWords);
